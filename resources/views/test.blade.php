@@ -16,6 +16,15 @@
     @else
     <h1>Good Morning {{$name}}</h1>
     @endif
+
+    
+<div style="text-align: center">
+    @for ($i=0; $i<10; $i++)
+    count: {{$i}}
+    <br>
+
+    @endfor
+       
 </div>
 
 <div style="text-align: center">
