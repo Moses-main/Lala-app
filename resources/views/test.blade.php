@@ -9,22 +9,13 @@
 <body>
     <div style="text-align: center">
     <h1>New View!</h1>
-    {{-- <p>Hello World my name is {{$name}}</p> --}}
 
-    @if ($name == 'Moses') 
-    <h1>Yo {{$name}}</h1>
+<div style="text-align:center">
+    @if (isset($name))
+    <h1>Hello {{$name}}</h1>
     @else
-    <h1>Good Morning {{$name}}</h1>
+    <h1>Test</h1>
     @endif
-
-    
-<div style="text-align: center">
-    @for ($i=0; $i<10; $i++)
-    count: {{$i}}
-    <br>
-
-    @endfor
-       
 </div>
 </body>
 </html>

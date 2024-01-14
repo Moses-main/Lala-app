@@ -17,15 +17,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test', function () {
-    return view('welcome');}
-);
-
-// Route::get('/index', function () {
-//     return view('test');}
+// Route::get('/test', function () {
+//     return view('welcome');}
 // );
 
 Route::get('/test', function () {
-    return view('test', ['name' => 'Moses']);
+    return view('test');
 }
 );
+
+// Dynamic routes
+Route::get('test/{name}', function($name){
+    return view('test', ['name' => $name]);
+});
