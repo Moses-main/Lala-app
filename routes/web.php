@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DogController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,16 +19,24 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/test', function () {
-//     return view('welcome');}
-// );
-
-Route::get('/test', function () {
-    return view('test');
-}
-);
+// Route::get('/dogs/create', [DogController::class, 'create'])->name('dogs.create');
+// Route::post('/dogs', [DogController::class, 'store']);
 
 // Dynamic routes
-Route::get('test/{name}', function($name){
-    return view('test', ['name' => $name]);
+// Route::get('test/{name}', function($name){
+//     return view('test', ['name' => $name]);
+// });
+
+Route::get('/newdog', function(){
+    return view('newdog');
 });
+
+// // Route to send the name of the dog to the database
+// Route::post('/dogs',[DogController::class, 'create']);
+
+// // Route to get the names of the dog in the table
+// Route::get('/dogs', function () {return view('newdog');})->name('dogs');
+
+Route::post('/dogs',[DogController::class, 'create'])->name('dog.create');
+   
+Route::get('/dogs', function () {return view('welcome');})->name('dogs');
