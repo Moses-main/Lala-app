@@ -8,9 +8,6 @@
     <title>Dogs Available</title>
 </head>
 <body>
-    {{-- <h1
-    class="font-bold border-b-gray-300 border-b pb-2 mb-3 text-center"
-    >These are the dogs that are gotten from the database</h1> --}}
 
     <h1
     class="font-bold border-b-gray-300 border-b pb-2 mb-3 text-center"
