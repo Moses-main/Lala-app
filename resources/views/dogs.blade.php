@@ -22,6 +22,6 @@
         @endforeach
     </ul>
     {{-- <br> --}}
-    @include('newdog')
+    @include('partials.form')
 </body>
 </html>
