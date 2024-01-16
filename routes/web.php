@@ -46,4 +46,4 @@ Route::post('/dogs',[DogController::class, 'create'])->name('dog.create');
 Route::get('/', function () {
     $dogs = Dog::all();
     return view('dogs',['dogs'=>$dogs]);
-})->name('dogs');
+})->name('index');

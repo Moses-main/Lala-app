@@ -15,7 +15,7 @@ class DogController extends Controller
         Dog::create($request->all());
 
         // redirect to the index route
-        return to_route('dogs');
+        return to_route('index');
     }
 
     

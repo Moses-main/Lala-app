@@ -7,11 +7,23 @@
     <title>New Dog</title>
 </head>
 <body>
-    <form action="{{route('dog.create')}}" method="post">
-    @csrf
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name">
-    <input type="submit" name="send" value="Submit">
+    <form action="{{route('dog.create')}}" method="post" class="text-center">
+        @csrf
+        <h3
+        class="font-bold border-b-gray-300 border-b pb-2 mb-3 mt-4 text-center"
+        >Add a new dog</h3>
+        <label for="name">Name</label>
+        <input 
+        type="text" 
+        name="name" 
+        id="name" 
+        class="border border-gray-200 p-1">
+
+        <input 
+        type="submit" 
+        name="send" 
+        value="Submit"
+        class="bg-gray-200 p-1 cursor-pointer border border-black">
     </form>
 </body>
 </html>
