@@ -11,8 +11,8 @@
         @csrf
         <h3
         class="font-bold border-b-gray-300 border-b pb-2 mb-3 mt-4 text-center"
-        >Add a new dog</h3>
-        <label for="name">Name</label>
+        >Add Tasks Below</h3>
+        <label for="name">Enter Task Here</label>
         <input 
         type="text" 
         name="name" 

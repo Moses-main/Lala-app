@@ -10,11 +10,12 @@
 <body>
     <h1
     class="font-bold border-b-gray-300 border-b pb-2 mb-3 text-center"
-    >Dogs in the database include:</h1>
+    >TO-DO APP</h1>
     <ul class="ml-10"
+    style="list-style:decimal"
     >
         @foreach ($dogs as $dog)
-        <li class="flex mb-1">
+        <li class="flex mb-1" style="list-style:decimal">
             <span
             class="flex-1"
             >{{ $dog->name }}
@@ -25,7 +26,7 @@
                 <button
                 type="submit" 
                 class="border bg-gray-200 p-1 border-black mr-7" >
-                Delete
+                Completed
                 </button>
             </form>
         </li>
