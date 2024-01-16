@@ -14,7 +14,21 @@
     <ul class="ml-10"
     >
         @foreach ($dogs as $dog)
-        <li>{{ $dog->name }}</li>
+        <li class="flex mb-1">
+            <span
+            class="flex-1"
+            >{{ $dog->name }}
+            </span>
+            <form action="{{route('dog.delete', $dog->id)}}" method="post">
+                @csrf
+                @method('DELETE')
+                <button
+                type="submit" 
+                class="border bg-gray-200 p-1 border-black">
+                Delete
+                </button>
+            </form>
+        </li>
         @endforeach
     </ul>
     {{-- <br> --}}

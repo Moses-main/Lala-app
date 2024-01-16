@@ -35,3 +35,6 @@ Route::get('/', function () {
     $dogs = Dog::all();
     return view('dogs',['dogs'=>$dogs]);
 })->name('index');
+
+// ROUTE TO DELETE THE DOGS IN FROM THE DATABASE
+Route::delete("/dog/{id}",[DogController::class, 'delete'])->name('dog.delete');
