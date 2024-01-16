@@ -24,7 +24,7 @@
                 @method('DELETE')
                 <button
                 type="submit" 
-                class="border bg-gray-200 p-1 border-black">
+                class="border bg-gray-200 p-1 border-black mr-7" >
                 Delete
                 </button>
             </form>
