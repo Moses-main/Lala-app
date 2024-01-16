@@ -7,15 +7,6 @@
     <title>Home page</title>
 </head>
 <body>
-    <div style="text-align: center">
-    <h1>New View!</h1>
-
-<div style="text-align:center">
-    @if (isset($name))
-    <h1>Hello {{$name}}</h1>
-    @else
-    <h1>Test</h1>
-    @endif
-</div>
+    
 </body>
 </html>
