@@ -9,12 +9,12 @@
 <body>
     <div style="text-align: center">
     <h1>New View!</h1>
+    {{-- <p>Hello World my name is {{$name}}</p> --}}
 
-<div style="text-align:center">
-    @if (isset($name))
-    <h1>Hello {{$name}}</h1>
+    @if ($name == 'Moses') 
+    <h1>Yo {{$name}}</h1>
     @else
-    <h1>Test</h1>
+    <h1>Good Morning {{$name}}</h1>
     @endif
 </div>
 

@@ -15,7 +15,14 @@ class DogController extends Controller
         Dog::create($request->all());
 
         // redirect to the index route
-        return to_route('dogs');
+        return to_route('index');
+    }
+
+    public function delete($id){
+        $dog = Dog::find($id);
+        $dog->delete();
+
+        return to_route('index');
     }
 
     
